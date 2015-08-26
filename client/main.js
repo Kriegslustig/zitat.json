@@ -1,11 +1,11 @@
 Meteor.startup(function () {
   Meteor.subscribe('allQuotes', function () {
-    Blaze.render(Template.quoteList, document.body)
-  })
 
-  setInterval(function () {
-    var newIndex = Session.get('currentQuote')  + 1
-    if(newIndex >= Quotes.find().count()) newIndex = 0
-    Session.set('currentQuote', newIndex)
-  }, 2000)
+    Blaze.render(Template.quoteList, document.body)
+
+    setInterval(function () {
+      Session.set('currentQuote', Math.round(Math.random() * Quotes.find().count() - 1))
+    }, 2000)
+
+  })
 })
