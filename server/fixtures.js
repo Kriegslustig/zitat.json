@@ -12,6 +12,7 @@ Meteor.startup(function () {
       ['Me', 'Hiasd!'],
       ['Me', 'asdHi!'],
       ['Me', 'Hsadsfggi!'],
+      ['Me', 'Hsadsfggi!'],
     ]
       .map(function (e) {
         Quotes.insert({
