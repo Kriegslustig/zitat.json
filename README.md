@@ -10,10 +10,12 @@ Einen Prototyp hatte nach etwa 30 Minuten. Schwieriger war es für mich dann noc
 
 Heute würde ich die App mit MongoDB, Express, Webpack, Node.js und einfachem XHR implementieren. Das lässt die App leichter Skalieren.
 
+```
           JS
   SERVER ----> CLIENT
           WS
   SERVER <---> CLIENT
         Quotes
   SERVER ----> CLIENT
+```
 
