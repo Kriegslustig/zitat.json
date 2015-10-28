@@ -5,7 +5,7 @@ Meteor.startup(function () {
 
     setInterval(function () {
       Session.set('currentQuote', Math.round(Math.random() * Quotes.find().count() - 1))
-    }, 2000)
+    }, 4000)
 
   })
 })
