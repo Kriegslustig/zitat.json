@@ -6,4 +6,7 @@ Ich habe mich entschieden die Applikation in einem Node.js Stack umzusetzen. Mit
 
 Es bietet mir eine in sich geschlossene Umgebung, die ich mit einem Kommando aufsetzen kann und die ich genau so einfach ausrollen kann. Meteor baut auf Node.js, MongoDB, Connect (vereinfachte Variante von Express) und WebSockets auf. Sie verwenden ein _Protokol_ namens DDP, es sendet einfach JSON über WebSockets.
 
-Einen Prototyp hatte nach etwa 30 Minuten. Schwieriger war es für mich dann noch alle Anforderungen an das Schema zu erfüllen. Weder Meteor noch Mongo hat das eingebaut. Jedoch gibt es ein gutes Package dafür; "aldeed:simple-schema. Die Daten werden über JSON auf den Client Synchronosiert
+Einen Prototyp hatte nach etwa 30 Minuten. Schwieriger war es für mich dann noch alle Anforderungen an das Schema zu erfüllen. Weder Meteor noch Mongo hat das eingebaut. Jedoch gibt es ein gutes Package dafür; "aldeed:simple-schema. Die Daten werden über JSON (DDP) auf den Client geteilt.
+
+Heute würde ich die App mit MongoDB, Express, Webpack, Node.js und einfachem XHR implementieren. Das lässt die App leichter Skalieren.
+
